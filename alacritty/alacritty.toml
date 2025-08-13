@@ -1,0 +1,99 @@
+[window]
+dimensions = { columns = 80, lines = 25 }
+position = { x = 100, y = 100 }
+padding = { x = 45, y = 45 }
+dynamic_padding = true
+decorations = "Full"
+opacity = 1
+blur = true
+startup_mode = "Windowed"
+title = "Terminal"
+dynamic_title = false
+decorations_theme_variant = "Dark"
+
+[scrolling]
+history = 10000
+
+[font]
+normal = { family = "Geist Mono", style = "Regular" }
+bold = { family = "Geist Mono", style = "Bold" }
+italic = { family = "Geist Mono", style = "Italic" }
+bold_italic = { family = "Geist Mono", style = "Bold Italic" }
+size = 14.0
+offset = { x = 0, y = 0 }
+builtin_box_drawing = true
+
+[colors.primary]
+background = '#0f1017'
+foreground = '#a6accd'
+
+[colors.cursor]
+cursor = '#a6accd'
+text = '#0f1017'
+
+[colors.selection]
+text = '#e4f0fb'
+background = '#303340'
+
+[colors.normal]
+black = '#0f1017'
+red = '#d0679d'
+green = '#5DE4c7'
+yellow = '#fffac2'
+blue = '#89ddff'
+magenta = '#f087bd'
+cyan = '#89ddff'
+white = '#a6accd'
+
+[colors.bright]
+black = '#a6accd'
+red = '#d0679d'
+green = '#5DE4c7'
+yellow = '#fffac2'
+blue = '#ADD7FF'
+magenta = '#f087bd'
+cyan = '#ADD7FF'
+white = '#ffffff'
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+save_to_clipboard = true
+
+[cursor]
+style = { shape = "Underline", blinking = "On" }
+vi_mode_style = { shape = "Underline", blinking = "On" }
+blink_interval = 750
+blink_timeout = 0
+unfocused_hollow = false
+
+[terminal]
+shell = { program = "C:\\Program Files\\Git\\bin\\bash.exe", args = ["--login"] }
+osc52 = "OnlyCopy"
+
+[mouse]
+hide_when_typing = true
+
+[keyboard]
+bindings = [
+    { key = "C", mods = "Alt", action = "Copy" },
+    { key = "V", mods = "Alt", action = "Paste" },
+    { key = "Plus", mods = "Alt", action = "IncreaseFontSize" },
+    { key = "Minus", mods = "Alt", action = "DecreaseFontSize" },
+    { key = "0", mods = "Alt", action = "ResetFontSize" },
+    { key = "F11", action = "ToggleFullscreen" },
+    { key = "M", mods = "Alt", action = "ToggleMaximized" },
+    { key = "H", mods = "Alt", action = "Hide" },
+    { key = "Q", mods = "Alt", action = "Quit" },
+    { key = "PageUp", mods = "Alt", action = "ScrollHalfPageUp" },
+    { key = "PageDown", mods = "Alt", action = "ScrollHalfPageDown" },
+    { key = "K", mods = "Alt", action = "ScrollLineUp" },
+    { key = "J", mods = "Alt", action = "ScrollLineDown" },
+    { key = "F", mods = "Alt", action = "SearchForward" },
+    { key = "B", mods = "Alt", action = "SearchBackward" },
+    { key = "T", mods = "Alt", action = "SpawnNewInstance" },
+    { key = "N", mods = "Alt", action = "CreateNewWindow" },
+    { key = "E", mods = "Alt", command = { program = "C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe", args = ["."] } },
+    { key = "U", mods = "Alt", command = { program = "C:\\Users\\LENOVO\\AppData\\Local\\Programs\\cursor\\Cursor.exe", args = ["."] } },
+    { key = "Z", mods = "Alt", command = { program = "C:\\Program Files\\Zen Browser\\zen.exe" } },
+    { key = "R", mods = "Alt", command = { program = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe" } },
+]
