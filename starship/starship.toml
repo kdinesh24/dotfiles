@@ -48,6 +48,7 @@ format = '[$all_status$ahead_behind ]($style)'
 style = "bg:#434c5e"
 format = '[ $symbol ($version) ]($style)'
 
+
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format

@@ -96,4 +96,5 @@ bindings = [
     { key = "U", mods = "Alt", command = { program = "C:\\Users\\LENOVO\\AppData\\Local\\Programs\\cursor\\Cursor.exe", args = ["."] } },
     { key = "Z", mods = "Alt", command = { program = "C:\\Program Files\\Zen Browser\\zen.exe" } },
     { key = "R", mods = "Alt", command = { program = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe" } },
+    
 ]
