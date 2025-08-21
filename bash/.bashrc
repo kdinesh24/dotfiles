@@ -3,7 +3,6 @@ case $- in
         export NVM_DIR="$HOME/.nvm";
         export BUN_INSTALL="$HOME/.bun";
         export PATH="$HOME/.local/bin:$BUN_INSTALL/bin:$PATH";
-        unset HISTFILE;
 
         function _load_nvm {
             unset -f node;
@@ -23,7 +22,7 @@ case $- in
         alias bu="bun uninstall";
         alias bd="bun dev";
         alias bs="bun start";
-        alias bb="bun run build";
+        alias bb="bun run build";``
         alias bunx="bun x";
         alias bxs="bun x shadcn@latest";
 
@@ -52,15 +51,20 @@ case $- in
         alias .="cd ..";
         alias ..="cd ../..";
         alias pr="bunx prettier --write .";
+        
+
         alias tx="tmux";
         alias ta="tmux attach";
         alias td="tmux detach";
         alias tk="tmux kill-session";
         alias tl="tmux ls";
+
+        
         
         eval "$(zoxide init bash)";
         eval "$(starship init bash)"
         
+        export PATH=$PATH:/c/tools/opencode
         ;;
     *) return;;
 esac
