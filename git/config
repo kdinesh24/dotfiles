@@ -32,7 +32,6 @@
     oldNormal    = "#d0679d"
 
 
-
 [diff]
     context          = 3
     interHunkContext = 10
