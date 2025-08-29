@@ -1,12 +1,12 @@
 [window]
 dimensions = { columns = 80, lines = 25 }
 position = { x = 100, y = 100 }
-padding = { x = 45, y = 45 }
+padding = { x = 0, y = 0 }
 dynamic_padding = true
 decorations = "Full"
 opacity = 1
 blur = true
-startup_mode = "Windowed"
+startup_mode = "Windowed" 
 title = "Terminal"
 dynamic_title = false
 decorations_theme_variant = "Dark"
@@ -14,10 +14,11 @@ decorations_theme_variant = "Dark"
 [scrolling]
 history = 10000
 
+
 [font]
-normal = { family = "Geist Mono", style = "Regular" }
-bold = { family = "Geist Mono", style = "Bold" }
-italic = { family = "Geist Mono", style = "Italic" }
+normal = { family = "FiraCode Nerd Font", style = "Regular" }
+bold = { family = "FiraCode Nerd Font", style = "Bold" }
+italic = { family = "FiraCode Nerd Font", style = "Italic" }
 bold_italic = { family = "Geist Mono", style = "Bold Italic" }
 size = 14.0
 offset = { x = 0, y = 0 }
@@ -96,5 +97,4 @@ bindings = [
     { key = "U", mods = "Alt", command = { program = "C:\\Users\\LENOVO\\AppData\\Local\\Programs\\cursor\\Cursor.exe", args = ["."] } },
     { key = "Z", mods = "Alt", command = { program = "C:\\Program Files\\Zen Browser\\zen.exe" } },
     { key = "R", mods = "Alt", command = { program = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe" } },
-    
 ]
