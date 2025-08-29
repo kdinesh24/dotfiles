@@ -1,9 +1,3 @@
-# Port of Oh My Zsh theme "avit" to Starship.
-# ======
-# 
-# Supports: Java, Node.JS, PHP, Go, Crystal, Python, Ruby, and Rust modules
-# Other modules include: Directory, and Git Branch/Commit/State/Status
-
 add_newline = false
 format = """\
   $crystal$golang$java$nodejs$php$python$rust\
