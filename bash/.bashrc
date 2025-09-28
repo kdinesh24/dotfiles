@@ -3,6 +3,11 @@ case $- in
         export NVM_DIR="$HOME/.nvm";
         export BUN_INSTALL="$HOME/.bun";
         export PATH="$HOME/.local/bin:$BUN_INSTALL/bin:$PATH";
+        export M2_HOME="/c/apache-maven-3.9.11"
+        export PATH="$M2_HOME/bin:$PATH"
+        export JAVA_HOME="/c/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot"
+        export PATH="$JAVA_HOME/bin:$PATH"
+        
 
         function _load_nvm {
             unset -f node;
@@ -25,7 +30,8 @@ case $- in
         alias bb="bun run build";``
         alias bunx="bun x";
         alias bxs="bun x shadcn@latest";
-
+        alias oc="opencommit";
+        
         alias nn="npm init";
         alias ni="npm install";
         alias na="npm install";
@@ -65,6 +71,10 @@ case $- in
         eval "$(starship init bash)"
         
         export PATH=$PATH:/c/tools/opencode
+        export PATH=$PATH:/c/Go/bin
         ;;
     *) return;;
 esac
+# Pazman CLI - added by installer
+alias pm="pazman"
+alias psql="\"/c/Program Files/PostgreSQL/17/bin/psql.exe\""
