@@ -1,3 +1,9 @@
+# Port of Oh My Zsh theme "avit" to Starship.
+# ======
+# 
+# Supports: Java, Node.JS, PHP, Go, Crystal, Python, Ruby, and Rust modules
+# Other modules include: Directory, and Git Branch/Commit/State/Status
+
 add_newline = false
 format = """\
   $crystal$golang$java$nodejs$php$python$rust\
@@ -25,25 +31,3 @@ deleted = "x "
 [git_branch]
 format = " [ $branch](bold fg:#8be9fd)"
 
-# Language Support
-[crystal]
-format = "🔮 "
-
-[golang]
-format = "🐭 "
-
-[java]
-format = "🍵 "
-
-[nodejs]
-format = "🍏 "
-detect_folders = [""]
-
-[php]
-format = "🐘 "
-
-[python]
-format = '🐍 [${pyenv_prefix}(${version})(\($virtualenv\))](bold fg:yellow)'
-
-[rust]
-format = "🦀 "
