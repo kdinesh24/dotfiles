@@ -23,8 +23,8 @@ offset = { x = 0, y = 0 }
 builtin_box_drawing = true
 
 [colors.primary]
-background = '#0F1014'
-foreground = '#868690'
+background = '#101010'
+foreground = '#a6accd'
 
 [colors.cursor]
 text   = '#0F1014'

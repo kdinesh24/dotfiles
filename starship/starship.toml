@@ -18,16 +18,98 @@ error_symbol = "[ ➤]($bold fg:#fb4934)"
 
 [directory]
 disabled = false
-format = "[ $path](bold fg:#ff79c6)"
+format = "[ $path](bold fg:#ffc799)"
 truncate_to_repo = false
 
 [git_status]
-format = " ([$all_status$ahead_behind](bold fg:#8be9fd))"
+format = " ([$all_status$ahead_behind](bold fg:#99ffe4))"
 staged = "• "
 modified = "~ "
 untracked = "+ "
 deleted = "x "
 
 [git_branch]
-format = " [ $branch](bold fg:#8be9fd)"
+format = " [ $branch](bold fg:#99ffe4)"
 
+[python]
+format = " [${symbol}${pyenv_prefix}(${version} )(\\($virtualenv\\) )](fg:#ffb86c)"
+symbol = ""
+pyenv_version_name = false
+detect_extensions = ["py"]
+detect_files = ["requirements.txt", ".python-version", "Pipfile", "pyproject.toml"]
+
+# Node.js with version
+[nodejs]
+format = " [${symbol}(${version} )](fg:#8be9fd)"
+symbol = ""
+detect_extensions = ["js", "mjs", "cjs", "ts"]
+detect_files = ["package.json", ".node-version", ".nvmrc"]
+
+# Java with version
+[java]
+format = " [${symbol}(${version} )](fg:#fb4934)"
+symbol = ""
+detect_extensions = ["java", "class", "jar", "gradle", "clj", "cljc"]
+detect_files = ["pom.xml", "build.gradle.kts", "build.sbt", "deps.edn"]
+
+# Go with version
+[golang]
+format = " [${symbol}(${version} )](fg:#8be9fd)"
+symbol = ""
+detect_extensions = ["go"]
+detect_files = ["go.mod", "go.sum"]
+
+# Rust with version
+[rust]
+format = " [${symbol}(${version} )](fg:#fb4934)"
+symbol = ""
+detect_extensions = ["rs"]
+detect_files = ["Cargo.toml", "Cargo.lock"]
+
+# PHP with version
+[php]
+format = " [${symbol}(${version} )](fg:#bd93f9)"
+symbol = ""
+detect_extensions = ["php"]
+detect_files = ["composer.json", ".php-version"]
+
+# Ruby with version
+[ruby]
+format = " [${symbol}(${version} )](fg:#fb4934)"
+symbol = ""
+detect_extensions = ["rb"]
+detect_files = ["Gemfile", ".ruby-version"]
+
+# Crystal with version
+[crystal]
+format = " [${symbol}(${version} )](fg:#f8f8f2)"
+symbol = ""
+detect_extensions = ["cr"]
+detect_files = ["shard.yml"]
+
+# Additional useful modules you might want to enable:
+
+# Docker context
+[docker_context]
+format = " [${symbol}$context](bold fg:#8be9fd)"
+symbol = ""
+only_with_files = true
+disabled = true
+
+# Kubernetes context
+[kubernetes]
+format = " [${symbol}$context( \\($namespace\\))](bold fg:#bd93f9)"
+symbol = ""
+disabled = true
+
+# AWS profile
+[aws]
+format = " [${symbol}($profile )(\\($region\\) )](bold fg:#ffb86c)"
+symbol = ""
+disabled = true
+
+# Package version (shows version from package.json, Cargo.toml, etc.)
+[package]
+format = " [$version](bold fg:#f1fa8c)"
+symbol = ""
+disabled = true
