@@ -1,19 +1,17 @@
 [window]
-dimensions = { columns = 80, lines = 25 }
-position = { x = 100, y = 100 }
-padding = { x = 0, y = 0 }
-dynamic_padding = true
-decorations = "Full"
-opacity = 1
-blur = true
-startup_mode = "Windowed" 
-title = "Terminal"
-dynamic_title = false
+dimensions                = { columns = 60, lines = 20 }
+position                  = { x = 100, y = 100 }
+padding                   = { x = 40, y = 40 }
+dynamic_padding           = true
+decorations               = "Full"
+startup_mode              = "Windowed"
+title                     = "Terminal"
+dynamic_title             = false
 decorations_theme_variant = "Dark"
 
 [scrolling]
-history = 10000
-
+history    = 10000
+multiplier = 2
 
 [font]
 normal = { family = "FiraCode Nerd Font", style = "Regular" }
@@ -25,46 +23,53 @@ offset = { x = 0, y = 0 }
 builtin_box_drawing = true
 
 [colors.primary]
-background = '#0f1017'
-foreground = '#a6accd'
+background = '#0F1014'
+foreground = '#868690'
 
 [colors.cursor]
-cursor = '#a6accd'
-text = '#0f1017'
+text   = '#0F1014'
+cursor = '#7C829D'
+
+[colors.vi_mode_cursor]
+text   = '#0F1014'
+cursor = '#7C829D'
 
 [colors.selection]
-text = '#e4f0fb'
-background = '#303340'
+text       = '#E2E4ED'
+background = '#575861'
+
+[colors.hints]
+start = { foreground = '#0F1014', background = '#B6BAC8' }
+end   = { foreground = '#0F1014', background = '#575861' }
 
 [colors.normal]
-black = '#0f1017'
-red = '#d0679d'
-green = '#5DE4c7'
-yellow = '#fffac2'
-blue = '#89ddff'
-magenta = '#f087bd'
-cyan = '#89ddff'
-white = '#a6accd'
+black   = '#131317'
+red     = '#999EB2'
+green   = '#626983'
+yellow  = '#D3D5DE'
+blue    = '#7C829D'
+magenta = '#E2E4ED'
+cyan    = '#B6BAC8'
+white   = '#868690'
 
 [colors.bright]
-black = '#a6accd'
-red = '#d0679d'
-green = '#5DE4c7'
-yellow = '#fffac2'
-blue = '#ADD7FF'
-magenta = '#f087bd'
-cyan = '#ADD7FF'
-white = '#ffffff'
+black   = '#575861'
+red     = '#999EB2'
+green   = '#626983'
+yellow  = '#D3D5DE'
+blue    = '#7C829D'
+magenta = '#E2E4ED'
+cyan    = '#B6BAC8'
+white   = '#868690'
 
 [selection]
-semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
 save_to_clipboard = true
 
 [cursor]
-style = { shape = "Underline", blinking = "On" }
-vi_mode_style = { shape = "Underline", blinking = "On" }
-blink_interval = 750
-blink_timeout = 0
+style            = { shape = "Underline", blinking = "On" }
+vi_mode_style    = { shape = "Underline", blinking = "On" }
+blink_interval   = 500
+blink_timeout    = 0
 unfocused_hollow = false
 
 [terminal]
@@ -73,28 +78,3 @@ osc52 = "OnlyCopy"
 
 [mouse]
 hide_when_typing = true
-
-[keyboard]
-bindings = [
-    { key = "C", mods = "Alt", action = "Copy" },
-    { key = "V", mods = "Alt", action = "Paste" },
-    { key = "Plus", mods = "Alt", action = "IncreaseFontSize" },
-    { key = "Minus", mods = "Alt", action = "DecreaseFontSize" },
-    { key = "0", mods = "Alt", action = "ResetFontSize" },
-    { key = "F11", action = "ToggleFullscreen" },
-    { key = "M", mods = "Alt", action = "ToggleMaximized" },
-    { key = "H", mods = "Alt", action = "Hide" },
-    { key = "Q", mods = "Alt", action = "Quit" },
-    { key = "PageUp", mods = "Alt", action = "ScrollHalfPageUp" },
-    { key = "PageDown", mods = "Alt", action = "ScrollHalfPageDown" },
-    { key = "K", mods = "Alt", action = "ScrollLineUp" },
-    { key = "J", mods = "Alt", action = "ScrollLineDown" },
-    { key = "F", mods = "Alt", action = "SearchForward" },
-    { key = "B", mods = "Alt", action = "SearchBackward" },
-    { key = "T", mods = "Alt", action = "SpawnNewInstance" },
-    { key = "N", mods = "Alt", action = "CreateNewWindow" },
-    { key = "E", mods = "Alt", command = { program = "C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe", args = ["."] } },
-    { key = "U", mods = "Alt", command = { program = "C:\\Users\\LENOVO\\AppData\\Local\\Programs\\cursor\\Cursor.exe", args = ["."] } },
-    { key = "Z", mods = "Alt", command = { program = "C:\\Program Files\\Zen Browser\\zen.exe" } },
-    { key = "R", mods = "Alt", command = { program = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe" } },
-]
